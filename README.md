@@ -1,4 +1,4 @@
-# mpi-battery-heat  
+# Battery_Sim <-> Mpi-Battery-Heat  
 
 ## Overview  
 
