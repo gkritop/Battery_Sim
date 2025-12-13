@@ -1,11 +1,11 @@
-# Battery_Sim <-> Mpi-Battery-Heat  
+# Battery_Sim  
 
 ## Overview  
 
 This project implements a **parallel 3D heat solver with Arrhenius chemical source term**, written in **C++17 with MPI**, and accompanied by **Python**.  
 
 The solver models **thermal runaway in battery-like materials**, solving the heat equation with a nonlinear source term across a distributed-memory domain.  
-The project was carried out as part of **scientific computing and HPC practice**, with emphasis on MPI parallelism, and numerical stability.  
+The project was carried out as part of **scientific computing and HPC** practice, with emphasis on MPI parallelism, and numerical stability.  
 
 ## Goals  
 
@@ -88,7 +88,7 @@ mpirun -np 8 ./battery_heat --nx 128 --ny 128 --nz 128 --scheme imex --hotspot_T
 | `--k` | Conductivity [W/mK] | 1.0 |
 | `--dt` | Timestep | 5e-5 |
 | `--t_final` | Final time | 0.01 |
-| `--scheme rk2|imex` | Time integrator | rk2 |
+| `--scheme rk2` | imex | Time integrator | rk2 |
 | `--T0` | Initial temperature [K] | 300 |
 | `--T_env` | Ambient temperature [K] | 300 |
 | `--hotspot_T` | Hotspot initial temperature [K] | 380 |
