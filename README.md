@@ -88,7 +88,7 @@ mpirun -np 8 ./battery_heat --nx 128 --ny 128 --nz 128 --scheme imex --hotspot_T
 | `--k` | Conductivity [W/mK] | 1.0 |
 | `--dt` | Timestep | 5e-5 |
 | `--t_final` | Final time | 0.01 |
-| `--scheme rk2` | imex | Time integrator | rk2 |
+| `--scheme rk2` | Time integrator | rk2 |
 | `--T0` | Initial temperature [K] | 300 |
 | `--T_env` | Ambient temperature [K] | 300 |
 | `--hotspot_T` | Hotspot initial temperature [K] | 380 |
